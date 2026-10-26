@@ -1,0 +1,161 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Northstar brings clarity to your team’s work, so you can focus on making an impact."
+    >
+    <title>Northstar — Make space for meaningful work</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:ital,wght@1,400;1,500&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Northstar home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2.8c.7 4.8 3.4 7.5 8.2 8.2-4.8.7-7.5 3.4-8.2 8.2-.7-4.8-3.4-7.5-8.2-8.2 4.8-.7 7.5-3.4 8.2-8.2Z"/>
+            </svg>
+          </span>
+          Northstar
+        </a>
+        <div class="nav-links">
+          <a href="#product">Product</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="nav-cta" href="#contact">
+          Start a project
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="eyebrow"><span></span>The simpler way to move work forward</div>
+        <h1 id="hero-title">Make space for<br><em>meaningful work.</em></h1>
+        <p class="hero-copy">
+          Northstar brings clarity to your team’s work, so you can spend less time managing and
+          more time making an impact.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#contact">
+            Get started
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+          </a>
+          <a class="text-link" href="#product">See how it works</a>
+        </div>
+
+        <div class="product-frame" aria-label="Northstar product preview">
+          <div class="window-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <div class="window-title">Today at Northstar</div>
+          </div>
+          <div class="dashboard">
+            <aside class="sidebar" aria-label="Product navigation preview">
+              <div class="mini-brand">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2.8c.7 4.8 3.4 7.5 8.2 8.2-4.8.7-7.5 3.4-8.2 8.2-.7-4.8-3.4-7.5-8.2-8.2 4.8-.7 7.5-3.4 8.2-8.2Z"/>
+                </svg>
+              </div>
+              <span class="side-line active"></span>
+              <span class="side-line"></span>
+              <span class="side-line short"></span>
+              <span class="side-avatar">NM</span>
+            </aside>
+            <div class="workspace">
+              <div class="workspace-head">
+                <div>
+                  <span class="overline">MONDAY, MAY 19</span>
+                  <strong>Good morning, Nora.</strong>
+                </div>
+                <div class="avatar-stack" aria-label="Five team members">
+                  <span>JB</span><span>AK</span><span>+3</span>
+                </div>
+              </div>
+              <div class="metric-grid">
+                <article class="metric-card dark">
+                  <span>Weekly momentum</span>
+                  <strong>84%</strong>
+                  <div class="chart-bars" aria-label="Weekly momentum chart">
+                    <i style="--height: 45%"></i><i style="--height: 60%"></i>
+                    <i style="--height: 50%"></i><i style="--height: 76%"></i>
+                    <i style="--height: 64%"></i><i style="--height: 90%"></i>
+                    <i style="--height: 84%"></i>
+                  </div>
+                </article>
+                <article class="metric-card">
+                  <span>In progress</span>
+                  <strong>12</strong>
+                  <small>4 due this week</small>
+                  <div class="progress" aria-label="68 percent complete"><i></i></div>
+                </article>
+              </div>
+              <div class="task-list">
+                <div class="task-heading"><strong>Priority work</strong><span>View all</span></div>
+                <div class="task"><i class="done"></i><span>Launch customer portal</span><small>Today</small></div>
+                <div class="task"><i></i><span>Finalize research synthesis</span><small>Tomorrow</small></div>
+                <div class="task"><i></i><span>Review Q2 campaign</span><small>Friday</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features shell" id="product" aria-labelledby="features-title">
+        <div class="section-intro">
+          <span class="overline">WHY NORTHSTAR</span>
+          <h2 id="features-title">Less busywork.<br>More forward motion.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <span>01</span><h3>One clear workspace</h3>
+            <p>Keep projects, priorities, and progress together so everyone knows what matters next.</p>
+          </article>
+          <article class="feature">
+            <span>02</span><h3>Thoughtfully automated</h3>
+            <p>Remove repetitive work with simple workflows that help your team move without friction.</p>
+          </article>
+          <article class="feature">
+            <span>03</span><h3>Built for momentum</h3>
+            <p>Turn ambitious plans into focused action with a system your whole team will actually use.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing shell" id="contact" aria-labelledby="contact-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2.8c.7 4.8 3.4 7.5 8.2 8.2-4.8.7-7.5 3.4-8.2 8.2-.7-4.8-3.4-7.5-8.2-8.2 4.8-.7 7.5-3.4 8.2-8.2Z"/>
+        </svg>
+        <p>Ready when you are.</p>
+        <h2 id="contact-title">Let’s make work<br><em>feel lighter.</em></h2>
+        <a class="primary-button light" href="mailto:hello@northstar.co">
+          Start a conversation
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+        </a>
+      </section>
+    </main>
+
+    <footer class="shell" id="about">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2.8c.7 4.8 3.4 7.5 8.2 8.2-4.8.7-7.5 3.4-8.2 8.2-.7-4.8-3.4-7.5-8.2-8.2 4.8-.7 7.5-3.4 8.2-8.2Z"/></svg>
+        </span>
+        Northstar
+      </a>
+      <p>Clarity for teams doing meaningful work.</p>
+      <span>© <span id="current-year">2025</span> Northstar</span>
+    </footer>
+  </body>
+</html>
