@@ -156,6 +156,7 @@
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Photo</th>
         </tr>
     </thead>
 
@@ -165,6 +166,15 @@
             <td>{{ student.student_id }}</td>
             <td>{{ student.student_name }}</td>
             <td>{{ student.student_email }}</td>
+            <td>
+    {% if student.photo %}
+        <img src="{{ student.photo.url }}"
+             width="100"
+             alt="{{ student.student_name }}">
+    {% else %}
+        No photo
+    {% endif %}
+</td>
         </tr>
         {% empty %}
         <tr>
